@@ -1,0 +1,141 @@
+.logo{
+    width: 7em;
+    height: 5em;
+    float: right;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 60px auto;
+    font-size: 3vw;
+}
+.home-header{
+    clear:right;
+}   
+p{
+    font-family: 'Poppins', sans-serif;
+    padding:5px;
+}
+.main-img{
+    width: 100%;
+    max-width: 90rem;
+    height:100%;
+    display: block;
+    margin: auto;
+}
+[class ^= "button"]{
+    max-width: 1200px;
+    height: 80px;
+    margin: 20px auto;
+}
+[class ^= "button"] img{
+    width: 100%;
+}
+[class ^= "button"] button{
+    width: 12em;
+    background: none;
+    border: none;
+}
+.button-track{
+    background: black;
+    width:100%;
+    display: inline-block;
+    max-height: 30px;
+}
+.button-text{
+    color: white;
+    font-size: 90%;
+    text-align: center;
+    margin: auto;
+}
+#btn1{
+    position: relative;
+    left: 0%;
+    top: 60%;
+    transition: all .8s ease-out;
+}
+#btn1:focus{
+    top:60%;
+    left: 70%;
+}
+#btn2{
+    position: relative;
+    left: 0%;
+    top: 60%;
+    transition: all .8s ease-out;
+}
+#btn2:focus{
+    top:60%;
+    left: 70%;
+}
+
+
+.raceAll{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr  3fr 3fr;
+    width: 80%;
+    margin: 10px auto;
+}
+.round img{
+    width: 80%;
+    height: 50%;
+    display: block;
+    margin: 10px auto 30px;
+}
+.round p{
+    color: rgb(213, 9, 9);
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 100%;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin: 0px;
+    font-size: 120%;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    float: right;
+    padding: 0px 10px;
+    font-size: 100%; 
+}
+.round{
+    border: solid black 1px;
+}
+
+@media (max-width: 2100px){
+    .raceAll{
+        grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+    }
+}
+
+@media (max-width: 1800px){
+    .raceAll{
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+    .rTitle{
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 1500px){
+    .raceAll{
+        grid-template-columns: 3fr 3fr 3fr;
+    }
+}
+
+@media (max-width: 1200px){
+    .raceAll{
+        grid-template-columns: 3fr 3fr;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px){
+    .raceAll{
+        grid-template-columns: 3fr;
+    }
+}

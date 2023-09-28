@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 2023</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script>
+        function loadPageTeam(){
+            window.location.href = 'teams.html';
+        }
+        function delayTeam(){
+            setTimeout(loadPageTeam, 700);
+        }
+        function loadPageLocation(){
+            window.location.href = 'locations.html';
+        }
+        function delayLoca(){
+            setTimeout(loadPageLocation, 700);
+        }
+    </script>
+</head>
+<body>
+    <img class = "logo" src="f1.png" alt="Formula 1 Logo">
+    <h1 class = "home-header">Formula 1 2023</h1>
+
+    <img class = "main-img" src="f1home.jpeg" alt="Cars on the race track">
+
+    <div class = "button-teams">
+        <button id = "btn1" onfocus = "delayTeam()"><img src = "f1Button.png"></button>
+        <div class = "button-track">
+            <p class = "button-text">2023 Teams</p>
+        </div>
+    </div>
+    <div class = "button-schedule">
+        <button id = "btn2" onfocus = "delayLoca()"><img src = "f1Button.png"></button>
+        <div class = "button-track">
+            <p class = "button-text">2023 Schedule</p>
+        </div>
+    </div>
+    
+</body>
+</html>
